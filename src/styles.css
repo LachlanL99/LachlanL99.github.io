@@ -17,13 +17,13 @@ Add a "." before the class name to refer to a class.
 .hero {
     background-color: #405a80;
     height: 100vh;
-    color: cornsilk;
-    font-size: 40px;
+    color: white;
+    font-size: 60px;
 }
 
 footer {
     background-color: #405a80;
-    color: cornsilk;
+    color: white;
     padding: 80px;
     text-align: center;
 }
@@ -34,12 +34,11 @@ nav {
 }
 
 ul {
-    display: flex;
+    display: none;
     list-style-type: none;
     width: 500px;
     justify-content: space-around;
     font-size: 30px;
-    align-self: flex-end;
 }
 
 ul.show {
@@ -52,7 +51,7 @@ li {
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 120px;
     margin: 0;
 }
 
@@ -61,8 +60,8 @@ h2 {
 }
 
 p {
-    margin: 0;
-    font-size: 30px;
+    margin: 10;
+    font-size: 20px;
     font-weight: 300;
 }
 
@@ -79,15 +78,15 @@ p {
 }
 
 .hero-text {
-    margin-left: 80px;
+    margin: 0 auto;
     margin-bottom: 230px;
+    text-align: center;
 }
 
 .button {
     width: 200px;
     height: 60px;
     border-radius: 30px;
-    background-color: crimson;
     text-align: center;
     font-size: 30px;
     font-weight: 300;
@@ -95,28 +94,34 @@ p {
     margin-top: 20px;
 }
 
-.button:hover {
-    background-color: blueviolet;
-}
-
-.button:active {
-    background-color: aqua;
-    color: blue;
-}
-
 .socials {
-    padding-bottom: 200px;
+    padding-bottom: 80px;
+    display:inline-block;
 }
 
 .social {
-    margin: 20px;
-    display: inline-block;
+    margin: 50px;
 }
 
 .sub-section {
-    display: flex;
-    justify-content: space-around;
+    display:flex;
+    justify-content: space-between;
     padding: 80px;
+}
+
+.information {
+    width: 900px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
+.headshot {
+    width: 200px;
+    border-radius: 100px;
 }
 
 .sub-section-alternative {
@@ -126,18 +131,8 @@ p {
     padding: 80px;
 }
 
-.headshot {
-    width: 250px;
-    border-radius: 125px;
-}
-
-.headshot-container {
-    display: flex;
-    align-items: center;
-}
-
 .project-card {
-    width: 300px;
+    width: 500px;
     height: 500px;
     box-shadow: 5px 5px 20px rgb(179, 179, 179);
     margin: 10px;
@@ -145,7 +140,7 @@ p {
 
 .project-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -176,37 +171,18 @@ a {
     color: white;
 }
 
-footer a {
-    display: inline-block;
-}
 
 .hamburger {
-    display: none;
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    align-self: flex-end;
 }
 
 .hamburger:focus {
     outline: 0;
-}
-
-@media only screen and (max-width: 1000px) {
-    .hamburger {
-        display: block;
-        border: 0;
-        background-color: transparent;
-        color: white;
-        font-size: 30px;
-        margin: 20px;
-        align-self: flex-end;
-    }
-
-    ul {
-        display: none;
-        background-color: aquamarine;
-        margin: 0px;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column-reverse;
-    }
+    background-color: transparent;
 }
